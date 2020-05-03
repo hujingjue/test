@@ -6,15 +6,27 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.2.0",
+    "axios": "^0.19.2",
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^0.9.1",
+    "echarts": "^4.7.0",
+    "http-proxy-middleware": "^1.0.3",
+    "json-server": "^0.16.1",
+    "moment": "2.18.1",
     "react": "^16.13.1",
+    "react-app-rewired": "^2.1.6",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-sticky": "^6.0.3",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject",
+    "mock": "json-server ./src/mock/mock.js -r ./src/mock/router.json -p 9000 --watch"
   },
   "eslintConfig": {
     "extends": "react-app"
